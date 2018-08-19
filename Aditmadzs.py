@@ -451,14 +451,13 @@ def clientBot(op):
 								client.sendMessage(to, "Key tidak bisa menggunakan spasi")
 							else:
 								settings["keyCommand"] = str(key).lower()
-								client.sendMessage(to, "Berhasil mengubah set key command menjadi : 「{}」".format(str(key).lower()))
-						elif cmd == "help":
-							helpMessage = menuHelp()
-							contact = client.getContact(sender)
-							icon = "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus)
-							name = contact.displayName
-							link = "https://pa1.narvii.com/6547/d29a5e4bb3405d83fc15cf50ec057f41640618a8_hq.gif"
-							client.sendFooter(to, helpMessage, icon, name, link)
+						 client.sendMessage(to, "Berhasil mengubah set key command menjadi : 「{}」".format(str(key).lower()))
+					if text.lower() == 'help':
+                                                 elif cmd == "help":
+                                                          helpMessage = meunhelp()
+                                                          cl.sendMessage(to, str(helpMessage))
+                                                          cl.sendMessage(msg.to,"我的製作者:")
+                                                          cl.sendContact(to,"uec6d62c3e4a61f033332bc1d86133e49")
 						elif cmd == "texttospeech":
 							helpTextToSpeech = menuTextToSpeech()
 							contact = client.getContact(sender)
