@@ -451,7 +451,7 @@ def clientBot(op):
 								client.sendMessage(to, "Key tidak bisa menggunakan spasi")
 							else:
 								settings["keyCommand"] = str(key).lower()
-						                client.sendMessage(to, "Berhasil mengubah set key command menjadi : 「{}」".format(str(key).lower()))
+						                client.sendMessage(to, "Berhasil mengubah set key command menjadi : 「{}」".format(str(key).lower()
                                                 elif cmd == "help":
 							helpMessage = menuHelp()
 							contact = client.sendContact(to,"ue006c548bfffccd02c6a125c0bd6d6f2")
