@@ -80,12 +80,12 @@ def timeChange(secs):
 	weeks, days = divmod(days,7)
 	months, weeks = divmod(weeks,4)
 	text = ""
-	if months != 0: text += "%02d Bulan" % (months)
-	if weeks != 0: text += " %02d Minggu" % (weeks)
-	if days != 0: text += " %02d Hari" % (days)
-	if hours !=  0: text +=  " %02d Jam" % (hours)
-	if mins != 0: text += " %02d Menit" % (mins)
-	if secs != 0: text += " %02d Detik" % (secs)
+	if months != 0: text += "%02d 月" % (months)
+	if weeks != 0: text += " %02d 禮拜" % (weeks)
+	if days != 0: text += " %02d 天" % (days)
+	if hours !=  0: text +=  " %02d 小時" % (hours)
+	if mins != 0: text += " %02d 分鐘" % (mins)
+	if secs != 0: text += " %02d 秒" % (secs)
 	if text[0] == " ":
 		text = text[1:]
 	return text
@@ -123,91 +123,88 @@ def menuHelp():
 	else:
 		key = ''
 	menuHelp =   "╭━━━━━━━━━━━━━━━━━━━━━" + "\n" + \
-                "┃🇮🇩┃🇮🇩🇮🇩〔 LoveKouku 〕🇮🇩🇮🇩" + "\n" + \
-                "┃🇮🇩┃" + "\n" + \
-                "┃🍁┃━━🍁〔 Help Message 〕🍁━━" + "\n" + \
-                "┃🍁┃━━━🍁〔 Meun 〕🍁━━━" + "\n" + \
-		"┃🍁┃ " + key + "Help\n" + \
-		"┃🍁┃ " + key + "Translate\n" + \
-		"┃🍁┃ " + key + "TextToSpeech\n" + \
-		"┃🔰┃━━🔰〔 Status Command 〕🔰━━" + "\n" + \
-		"┃🔰┃MyKey" + "\n" + \
-		"┃🔰┃ " + key + "Logout" + "\n" + \
-		"┃🔰┃ " + key + "Restart" + "\n" + \
-		"┃🔰┃ " + key + "Runtime" + "\n" + \
-		"┃🔰┃ " + key + "Speed" + "\n" + \
-		"┃🔰┃ " + key + "Status" + "\n" + \
-		"┃🔧┃━🔧〔 Settings Command 〕🔧━" + "\n" + \
-                "┃🔧┃SetKey 「On/Off」" + "\n" + \
-                "┃🔧┃ " + key + "AutoAdd 「On/Off」" + "\n" + \
-                "┃🔧┃ " + key + "AutoJoin 「On/Off」" + "\n" + \
-                "┃🔧┃ " + key + "AutoJoinTicket 「On/Off」" + "\n" + \
-                "┃🔧┃ " + key + "AutoRead 「On/Off」" + "\n" + \
-                "┃🔧┃ " + key + "AutoRespon 「On/Off」" + "\n" + \
-                "┃🔧┃ " + key + "CheckContact 「On/Off」" + "\n" + \
-                "┃🔧┃ " + key + "CheckPost 「On/Off」" + "\n" + \
-                "┃🔧┃ " + key + "CheckSticker 「On/Off」" + "\n" + \
-                "┃🔧┃ " + key + "DetectUnsend 「On/Off」" + "\n" + \
-                "┃🔧┃ " + key + "SetKey: 「text」" + "\n" + \
-                "┃🔧┃ " + key + "SetAutoAddMessage: 「text」" + "\n" + \
-                "┃🔧┃ " + key + "SetAutoResponMessage: 「text」" + "\n" + \
-                "┃🔧┃ " + key + "SetAutoJoinMessage: 「Text」" + "\n" + \
-		"┃🇮🇩┃━━🇮🇩〔 Self Command 〕🇮🇩━━" + "\n" + \
-                "┃🇮🇩┃ " + key + "ChangeName: 「Text」" + "\n" + \
-                "┃🇮🇩┃ " + key + "ChangeBio: 「Text」" + "\n" + \
-                "┃🇮🇩┃ " + key + "Me" + "\n" + \
-                "┃🇮🇩┃ " + key + "MyMid" + "\n" + \
-                "┃🇮🇩┃ " + key + "MyName" + "\n" + \
-                "┃🇮🇩┃ " + key + "MyBio" + "\n" + \
-                "┃🇮🇩┃ " + key + "MyPicture" + "\n" + \
-                "┃🇮🇩┃ " + key + "MyVideoProfile" + "\n" + \
-                "┃🇮🇩┃ " + key + "MyCover" + "\n" + \
-                "┃🇮🇩┃ " + key + "MyProfile" + "\n" + \
-                "┃🇮🇩┃ " + key + "GetMid @Mention" + "\n" + \
-                "┣🇮🇩┫ " + key + "GetName @Mention" + "\n" + \
-                "┃🇮🇩┃ " + key + "GetBio @Mention" + "\n" + \
-                "┃🇮🇩┃ " + key + "GetPicture @Mention" + "\n" + \
-                "┃🇮🇩┃ " + key + "GetVideoProfile @Mention" + "\n" + \
-                "┃🇮🇩┃ " + key + "GetCover @Mention" + "\n" + \
-                "┃🇮🇩┃ " + key + "CloneProfile @Mention" + "\n" + \
-                "┃🇮🇩┃ " + key + "RestoreProfile" + "\n" + \
-                "┃🇮🇩┃ " + key + "BackupProfile" + "\n" + \
-                "┃🇮🇩┃ " + key + "FriendList" + "\n" + \
-                "┃🇮🇩┃ " + key + "FriendInfo 「Number」" + "\n" + \
-                "┃🇮🇩┃ " + key + "BlockList" + "\n" + \
-                "┃🇮🇩┃ " + key + "FriendBroadcast" + "\n" + \
-                "┃🇮🇩┃ " + key + "ChangePictureProfile" + "\n" + \
-		"┃🛠┃━━🛠〔 Group Command 〕🛠━━" + "\n" + \
-                "┃🛠┃ " + key + "ChangeGroupName: 「Text」" + "\n" + \
-                "┃🛠┃ " + key + "GroupCreator" + "\n" + \
-                "┃🛠┃ " + key + "GroupID" + "\n" + \
-                "┃🛠┃ " + key + "GroupName" + "\n" + \
-                "┃🛠┃ " + key + "GroupPicture" + "\n" + \
-                "┃🛠┃ " + key + "OpenQR" + "\n" + \
-                "┃🛠┃ " + key + "CloseQR" + "\n" + \
-                "┃🛠┃ " + key + "GroupList" + "\n" + \
-                "┃🛠┃ " + key + "MemberList" + "\n" + \
-                "┃🛠┃ " + key + "PendingList" + "\n" + \
-                "┃🛠┃ " + key + "GroupInfo" + "\n" + \
-                "┣🛠┫ " + key + "GroupBroadcast: 「Text」" + "\n" + \
-                "┃🛠┃ " + key + "ChangeGroupPicture" + "\n" + \
-		"┃✍️┃━━✍️〔 Special Command 〕✍️━━" + "\n" + \
-                "┃✍️┃ " + key + "Mimic 「On/Off」" + "\n" + \
-                "┃✍️┃ " + key + "MimicList" + "\n" + \
-                "┃✍️┃ " + key + "MimicAdd @Mention" + "\n" + \
-                "┃✍️┃ " + key + "MimicDel @Mention" + "\n" + \
-                "┃✍️┃ " + key + "Mention" + "\n" + \
-                "┃✍️┃ " + key + "Lurking 「On/Off」" + "\n" + \
-                "┃✍️┃ " + key + "Lurking" + "\n" + \
-		"┃📀┃━━📀〔 Media Command 〕📀━━" + "\n" + \
-                "┃📀┃ " + key + "InstaInfo 「Username」" + "\n" + \
-                "┃📀┃ " + key + "InstaStory 「Username」" + "\n" + \
-                "┃📀┃ " + key + "Quotes" + "\n" + \
-                "┃📀┃ " + key + "SearchImage 「Search」" + "\n" + \
-                "┃📀┃ " + key + "SearchMusic 「Search」" + "\n" + \
-                "┃📀┃ " + key + "SearchLyric 「Search」" + "\n" + \
-                "┃📀┃ " + key + "SearchYoutube 「Search」" + "\n" + \
-		"╰━━━〔 BIG BOS: ©LoveKouku™  〕"
+                "┃━━━━〔 製作者: 楓糖 〕━━━━" + "\n" + \
+                "┃━━〔 Help Message 〕━━" + "\n" + \
+                "┃━━━━〔 菜單 〕━━━━" + "\n" + \
+		"┃" + key + "Help\n" + \
+		"┃━━〔 狀態指令 〕━━" + "\n" + \
+		"┃MyKey" + "\n" + \
+		"┃" + key + "Logout" + "\n" + \
+		"┃" + key + "Restart" + "\n" + \
+		"┃" + key + "Runtime" + "\n" + \
+		"┃" + key + "Speed" + "\n" + \
+		"┃" + key + "Status" + "\n" + \
+		"┃━〔 Settings Command 〕━" + "\n" + \
+                "┃SetKey 「On/Off」" + "\n" + \
+                "┃" + key + "AutoAdd 「On/Off」" + "\n" + \
+                "┃" + key + "AutoJoin 「On/Off」" + "\n" + \
+                "┃" + key + "AutoJoinTicket 「On/Off」" + "\n" + \
+                "┃" + key + "AutoRead 「On/Off」" + "\n" + \
+                "┃" + key + "AutoRespon 「On/Off」" + "\n" + \
+                "┃" + key + "CheckContact 「On/Off」" + "\n" + \
+                "┃" + key + "CheckPost 「On/Off」" + "\n" + \
+                "┃" + key + "CheckSticker 「On/Off」" + "\n" + \
+                "┃" + key + "DetectUnsend 「On/Off」" + "\n" + \
+                "┃" + key + "SetKey: 「text」" + "\n" + \
+                "┃" + key + "SetAutoAddMessage: 「text」" + "\n" + \
+                "┃" + key + "SetAutoResponMessage: 「text」" + "\n" + \
+                "┃" + key + "SetAutoJoinMessage: 「Text」" + "\n" + \
+		"┃━━〔 Self Command 🇩━━" + "\n" + \
+                "┃" + key + "ChangeName: 「Text」" + "\n" + \
+                "┃" + key + "ChangeBio: 「Text」" + "\n" + \
+                "┃" + key + "Me" + "\n" + \
+                "┃" + key + "MyMid" + "\n" + \
+                "┃" + key + "MyName" + "\n" + \
+                "┃" + key + "MyBio" + "\n" + \
+                "┃" + key + "MyPicture" + "\n" + \
+                "┃" + key + "MyVideoProfile" + "\n" + \
+                "┃" + key + "MyCover" + "\n" + \
+                "┃" + key + "MyProfile" + "\n" + \
+                "┃" + key + "GetMid @Mention" + "\n" + \
+                "┣" + key + "GetName @Mention" + "\n" + \
+                "┃" + key + "GetBio @Mention" + "\n" + \
+                "┃" + key + "GetPicture @Mention" + "\n" + \
+                "┃" + key + "GetVideoProfile @Mention" + "\n" + \
+                "┃" + key + "GetCover @Mention" + "\n" + \
+                "┃" + key + "CloneProfile @Mention" + "\n" + \
+                "┃" + key + "RestoreProfile" + "\n" + \
+                "┃" + key + "BackupProfile" + "\n" + \
+                "┃" + key + "FriendList" + "\n" + \
+                "┃" + key + "FriendInfo 「Number」" + "\n" + \
+                "┃" + key + "BlockList" + "\n" + \
+                "┃" + key + "FriendBroadcast" + "\n" + \
+                "┃" + key + "ChangePictureProfile" + "\n" + \
+		"┃━━〔 Group Command 〕━━" + "\n" + \
+                "┃" + key + "ChangeGroupName: 「Text」" + "\n" + \
+                "┃" + key + "GroupCreator" + "\n" + \
+                "┃" + key + "GroupID" + "\n" + \
+                "┃" + key + "GroupName" + "\n" + \
+                "┃" + key + "GroupPicture" + "\n" + \
+                "┃" + key + "OpenQR" + "\n" + \
+                "┃" + key + "CloseQR" + "\n" + \
+                "┃" + key + "GroupList" + "\n" + \
+                "┃" + key + "MemberList" + "\n" + \
+                "┃" + key + "PendingList" + "\n" + \
+                "┃" + key + "GroupInfo" + "\n" + \
+                "┣" + key + "GroupBroadcast: 「Text」" + "\n" + \
+                "┃" + key + "ChangeGroupPicture" + "\n" + \
+		"┃━━〔 Special Command 〕━━" + "\n" + \
+                "┃" + key + "Mimic 「On/Off」" + "\n" + \
+                "┃" + key + "MimicList" + "\n" + \
+                "┃" + key + "MimicAdd @Mention" + "\n" + \
+                "┃" + key + "MimicDel @Mention" + "\n" + \
+                "┃" + key + "Mention" + "\n" + \
+                "┃" + key + "Lurking 「On/Off」" + "\n" + \
+                "┃" + key + "Lurking" + "\n" + \
+		"┃━━〔 Media Command 〕━━" + "\n" + \
+                "┃" + key + "InstaInfo 「Username」" + "\n" + \
+                "┃" + key + "InstaStory 「Username」" + "\n" + \
+                "┃" + key + "Quotes" + "\n" + \
+                "┃" + key + "SearchImage 「Search」" + "\n" + \
+                "┃" + key + "SearchMusic 「Search」" + "\n" + \
+                "┃" + key + "SearchLyric 「Search」" + "\n" + \
+                "┃" + key + "SearchYoutube 「Search」" + "\n" + \
+		"╰━━━〔  CREATOR: © Maple ™  〕"
 	return menuHelp
 
 def menuTextToSpeech():
@@ -270,7 +267,7 @@ def menuTextToSpeech():
 				"╠ " + key + "vi : Vietnamese" + "\n" + \
 				"╠ " + key + "cy : Welsh" + "\n" + \
 				"╚══[ Jangan Typo ]" + "\n" + "\n\n" + \
-				"Contoh : " + key + "say-id Aditmadzs"
+				"Contoh : " + key + "say-id lovekouku"
 	return menuTextToSpeech
 
 def menuTranslate():
