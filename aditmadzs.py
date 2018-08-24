@@ -457,7 +457,7 @@ def clientBot(op):
 								client.sendMessage(to, "Berhasil mengubah set key command menjadi : 「{}」".format(str(key).lower()))
 						elif cmd == "help":
 							helpMessage = menuHelp()
-							contact = client.getContact(sender)
+							contact = client.sendContact(to, uec6d62c3e4a61f033332bc1d86133e49)
 							icon = "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus)
 							name = contact.displayName
 							link = "https://pa1.narvii.com/6547/d29a5e4bb3405d83fc15cf50ec057f41640618a8_hq.gif"
