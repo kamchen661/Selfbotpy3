@@ -50,12 +50,12 @@ settings = json.load(settingsOpen)
 unsend = json.load(unsendOpen)
 
 def restartBot():
-	print ("[ 訊息 ] BOT 以重置")
+	print ("[ INFO ] BOT RESETTED")
 	python = sys.executable
 	os.execl(python, python, *sys.argv)
 
 def logError(text):
-    client.log("[ 錯誤 ] {}".format(str(text)))
+    client.log("[ ERROR ] {}".format(str(text)))
     tz = pytz.timezone("Asia/Makassar")
     timeNow = datetime.now(tz=tz)
     timeHours = datetime.strftime(timeNow,"(%H:%M)")
@@ -389,24 +389,24 @@ def menuTranslate():
 def clientBot(op):
 	try:
 		if op.type == 0:
-			print ("[ 0 ] 操作結束")
+			print ("[ 0 ] END OF OPERATION")
 			return
 
 		if op.type == 5:
-			print ("[ 5 ] 通知添加聯繫人")
+			print ("[ 5 ] NOTIFIED ADD CONTACT")
 			if settings["autoAdd"] == True:
 				client.findAndAddContactsByMid(op.param1)
 			client.sendMention(op.param1, settings["autoJoinMessage"], [op.param1])
 
 		if op.type == 13:
-			print ("[ 13 ] 邀請進入群組")
+			print ("[ 13 ] NOTIFIED INVITE INTO GROUP")
 			if settings["autoJoin"] and clientMid in op.param3:
 				client.acceptGroupInvitation(op.param1)
 				client.sendMention(op.param1, settings["autoJoinMessage"], [op.param2])
 
 		if op.type == 25:
 			try:
-				print("[ 25 ] 發送消息")
+				print("[ 25 ] SEND MESSAGE")
 				msg = op.message
 				text = str(msg.text)
 				msg_id = msg.id
@@ -429,7 +429,7 @@ def clientBot(op):
 					if msg.contentType == 0:
 						if cmd == "logout":
 							client.sendMessage(to, "成功關閉BOT")
-							sys.exit("[信息] BOT SHUTDOWN")
+							sys.exit("[ INFO ] BOT SHUTDOWN")
 							return
 						elif cmd == "restart":
 							client.sendMessage(to, "成功重置機器人")
@@ -1406,7 +1406,7 @@ def clientBot(op):
 
 		if op.type == 26:
 			try:
-				print("[ 26 ] 收到消息")
+				print("[ 26 ] RECEIVE MESSAGE")
 				msg = op.message
 				text = str(msg.text)
 				msg_id = msg.id
@@ -1475,7 +1475,7 @@ def clientBot(op):
 
 
 		if op.type == 55:
-			print ("[ 55 ] 通知已讀消息")
+			print ("[ 55 ] NOTIFIED READ MESSAGE")
 			if op.param1 in read["readPoint"]:
 				if op.param2 not in read["readMember"][op.param1]:
 					read["readMember"][op.param1].append(op.param2)
