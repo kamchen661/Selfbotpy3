@@ -1042,7 +1042,7 @@ def clientBot(op):
 									return client.sendMessage(to, "沒有已讀者")
 								else:
 									no = 0
-									result = "╔══[ 已讀者r ]"
+									result = "╔══[ 已讀者 ]"
 									for dataRead in read["readMember"][to]:
 										no += 1
 										result += "\n╠ {}. @!".format(str(no))
