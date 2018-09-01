@@ -123,79 +123,79 @@ def menuHelp():
 	else:
 		key = ''
 	menuHelp =   "╭━━━━━━━━━━━━━━━━━━━━━" + "\n" + \
-                "┃〔 Lovekouku Beta 〕" + "\n" + \
+                "┃〔 楓糖製作半垢 〕" + "\n" + \
                 "┃〔 Help Message 〕━━" + "\n" + \
                 "┃〔 Meun 〕━━━" + "\n" + \
-		        "┃" + key + "Help\n" +\
+		        "┃" + key + "Help 幫助\n" +\
 		        "┃〔 Status Command 〕━━" + "\n" + \
-		        "┃MyKey" + "\n" + \
-		        "┃" + key + "Logout" + "\n" + \
-		        "┃" + key + "Restart" + "\n" + \
-		        "┃" + key + "Runtime" + "\n" + \
-		        "┃" + key + "Speed" + "\n" + \
-		        "┃" + key + "Status" + "\n" + \
+		        "┃MyKey 我的鑰匙" + "\n" + \
+		        "┃" + key + "Logout 登出" + "\n" + \
+		        "┃" + key + "Restart 重啟" + "\n" + \
+		        "┃" + key + "Runtime 運行時間" + "\n" + \
+		        "┃" + key + "Speed 速度" + "\n" + \
+		        "┃" + key + "Status 狀態" + "\n" + \
 		        "┃〔 Settings Command 〕━" + "\n" + \
-                "┃SetKey 「On/Off」" + "\n" + \
-                "┃" + key + "AutoAdd 「On/Off」" + "\n" + \
-                "┃" + key + "AutoJoin 「On/Off」" + "\n" + \
-                "┃" + key + "AutoJoinTicket 「On/Off」" + "\n" + \
-                "┃" + key + "AutoRead 「On/Off」" + "\n" + \
-                "┃" + key + "AutoRespon 「On/Off」" + "\n" + \
-                "┃" + key + "CheckContact 「On/Off」" + "\n" + \
-                "┃" + key + "CheckPost 「On/Off」" + "\n" + \
-                "┃" + key + "CheckSticker 「On/Off」" + "\n" + \
-                "┃" + key + "DetectUnsend 「On/Off」" + "\n" + \
-                "┃" + key + "SetKey: 「text」" + "\n" + \
-                "┃" + key + "SetAutoAddMessage: 「text」" + "\n" + \
-                "┃" + key + "SetAutoResponMessage: 「text」" + "\n" + \
-                "┃" + key + "SetAutoJoinMessage: 「Text」" + "\n" + \
+                "┃SetKey 「On/Off」 設置鍵" + "\n" + \
+                "┃" + key + "AutoAdd 「On/Off」 自動添加" + "\n" + \
+                "┃" + key + "AutoJoin 「On/Off」自動入群" + "\n" + \
+                "┃" + key + "AutoJoinTicket 「On/Off」自動加入票卷" + "\n" + \
+                "┃" + key + "AutoRead 「On/Off」自動已讀" + "\n" + \
+                "┃" + key + "AutoRespon 「On/Off」 自動回复" + "\n" + \
+                "┃" + key + "CheckContact 「On/Off」查看友資" + "\n" + \
+                "┃" + key + "CheckPost 「On/Off」 查看貼文" + "\n" + \
+                "┃" + key + "CheckSticker 「On/Off」 查看貼圖" + "\n" + \
+                "┃" + key + "DetectUnsend 「On/Off」 檢查收回" + "\n" + \
+                "┃" + key + "SetKey: 「text」 設置鍵: 文字" + "\n" + \
+                "┃" + key + "SetAutoAddMessage: 「text」 設置自動添加消息" + "\n" + \
+                "┃" + key + "SetAutoResponMessage: 「text」 設置自動回复消息" + "\n" + \
+                "┃" + key + "SetAutoJoinMessage: 「Text」 設置自動加入消息" + "\n" + \
 		        "┃〔 Self Command 〕━━" + "\n" + \
-                "┃" + key + "ChangeName: 「Text」" + "\n" + \
-                "┃" + key + "ChangeBio: 「Text」" + "\n" + \
-                "┃" + key + "Me" + "\n" + \
-                "┃" + key + "MyMid" + "\n" + \
-                "┃" + key + "MyName" + "\n" + \
-                "┃" + key + "MyBio" + "\n" + \
-                "┃" + key + "MyPicture" + "\n" + \
-                "┃" + key + "MyVideoProfile" + "\n" + \
-                "┃" + key + "MyCover" + "\n" + \
-                "┃" + key + "MyProfile" + "\n" + \
-                "┃" + key + "GetMid @Mention" + "\n" + \
-                "┣" + key + "GetName @Mention" + "\n" + \
-                "┃" + key + "GetBio @Mention" + "\n" + \
-                "┃" + key + "GetPicture @Mention" + "\n" + \
-                "┃" + key + "GetVideoProfile @Mention" + "\n" + \
-                "┃" + key + "GetCover @Mention" + "\n" + \
-                "┃" + key + "CloneProfile @Mention" + "\n" + \
-                "┃" + key + "RestoreProfile" + "\n" + \
-                "┃" + key + "BackupProfile" + "\n" + \
-                "┃" + key + "FriendList" + "\n" + \
-                "┃" + key + "FriendInfo 「Number」" + "\n" + \
-                "┃" + key + "BlockList" + "\n" + \
-                "┃" + key + "FriendBroadcast" + "\n" + \
-                "┃" + key + "ChangePictureProfile" + "\n" + \
+                "┃" + key + "ChangeName: 「Text」 更改名稱" + "\n" + \
+                "┃" + key + "ChangeBio: 「Text」 更改個簽" + "\n" + \
+                "┃" + key + "Me 我" + "\n" + \
+                "┃" + key + "MyMid 我的mid" + "\n" + \
+                "┃" + key + "MyName 我的名稱" + "\n" + \
+                "┃" + key + "MyBio 我的個簽" + "\n" + \
+                "┃" + key + "MyPicture 我的頭貼" + "\n" + \
+                "┃" + key + "MyVideoProfile 我的視頻資料" + "\n" + \
+                "┃" + key + "MyCover 我的封面" + "\n" + \
+                "┃" + key + "MyProfile 我的個人資料" + "\n" + \
+                "┃" + key + "GetMid @Mention 獲得Mid" + "\n" + \
+                "┣" + key + "GetName @Mention 獲得名稱" + "\n" + \
+                "┃" + key + "GetBio @Mention 獲得個簽" + "\n" + \
+                "┃" + key + "GetPicture @Mention 獲得頭貼" + "\n" + \
+                "┃" + key + "GetVideoProfile @Mention 獲得視頻資料" + "\n" + \
+                "┃" + key + "GetCover @Mention 獲得封面" + "\n" + \
+                "┃" + key + "CloneProfile @Mention 克隆配置文件" + "\n" + \
+                "┃" + key + "RestoreProfile 恢復配置文件" + "\n" + \
+                "┃" + key + "BackupProfile 備份配置文件" + "\n" + \
+                "┃" + key + "FriendList 朋友列表" + "\n" + \
+                "┃" + key + "FriendInfo 「Number」 朋友信息" + "\n" + \
+                "┃" + key + "BlockList 黑名單" + "\n" + \
+                "┃" + key + "FriendBroadcast 朋友廣播" + "\n" + \
+                "┃" + key + "ChangePictureProfile 更改圖片配置文件" + "\n" + \
 		        "┃〔 Group Command 〕━━" + "\n" + \
-                "┃" + key + "ChangeGroupName: 「Text」" + "\n" + \
-                "┃" + key + "GroupCreator" + "\n" + \
-                "┃" + key + "GroupID" + "\n" + \
-                "┃" + key + "GroupName" + "\n" + \
-                "┃" + key + "GroupPicture" + "\n" + \
-                "┃" + key + "OpenQR" + "\n" + \
-                "┃" + key + "CloseQR" + "\n" + \
-                "┃" + key + "GroupList" + "\n" + \
-                "┃" + key + "MemberList" + "\n" + \
-                "┃" + key + "PendingList" + "\n" + \
-                "┃" + key + "GroupInfo" + "\n" + \
-                "┣" + key + "GroupBroadcast: 「Text」" + "\n" + \
-                "┃" + key + "ChangeGroupPicture" + "\n" + \
+                "┃" + key + "ChangeGroupName: 「Text」 更改群組名" + "\n" + \
+                "┃" + key + "GroupCreator 群組創建者" + "\n" + \
+                "┃" + key + "GroupID 群組ID" + "\n" + \
+                "┃" + key + "GroupName 群組名稱" + "\n" + \
+                "┃" + key + "GroupPicture 群組圖片" + "\n" + \
+                "┃" + key + "OpenQR 開啟QR" + "\n" + \
+                "┃" + key + "CloseQR 關閉QR" + "\n" + \
+                "┃" + key + "GroupList 群組列表" + "\n" + \
+                "┃" + key + "MemberList 成員名單" + "\n" + \
+                "┃" + key + "PendingList 待定名單" + "\n" + \
+                "┃" + key + "GroupInfo 群組資訊" + "\n" + \
+                "┣" + key + "GroupBroadcast: 「Text」 群組廣播" + "\n" + \
+                "┃" + key + "ChangeGroupPicture 更改組圖片" + "\n" + \
 		        "┃〔 Special Command 〕━━" + "\n" + \
-                "┃" + key + "Mimic 「On/Off」" + "\n" + \
-                "┃" + key + "MimicList" + "\n" + \
-                "┃" + key + "MimicAdd @Mention" + "\n" + \
-                "┃" + key + "MimicDel @Mention" + "\n" + \
-                "┃" + key + "Mention" + "\n" + \
-                "┃" + key + "Lurking 「On/Off」" + "\n" + \
-                "┃" + key + "Lurking" + "\n" + \
+                "┃" + key + "Mimic 「On/Off」 模仿" + "\n" + \
+                "┃" + key + "MimicList 模仿名單" + "\n" + \
+                "┃" + key + "MimicAdd @Mention 加入模仿" + "\n" + \
+                "┃" + key + "MimicDel @Mention 刪除模仿" + "\n" + \
+                "┃" + key + "Mention 標記" + "\n" + \
+                "┃" + key + "Lurking 「On/Off」 已讀點設置" + "\n" + \
+                "┃" + key + "Lurking 查看已讀" + "\n" + \
 		        "┃〔 Media Command 〕━━" + "\n" + \
                 "┃" + key + "InstaInfo 「Username」" + "\n" + \
                 "┃" + key + "InstaStory 「Username」" + "\n" + \
@@ -204,7 +204,7 @@ def menuHelp():
                 "┃" + key + "SearchMusic 「Search」" + "\n" + \
                 "┃" + key + "SearchLyric 「Search」" + "\n" + \
                 "┃" + key + "SearchYoutube 「Search」" + "\n" + \
-		        "╰━━━〔 製作者 : ©LoveKouku™  〕"
+		        "╰━━━〔 製作者 : ©楓糖™  〕"
 	return menuHelp
 
 def menuTextToSpeech():
