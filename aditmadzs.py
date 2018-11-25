@@ -123,7 +123,7 @@ def menuHelp():
 	else:
 		key = ''
 	menuHelp =   "╭━━━━━━━━━━━━━━━━━━━━━" + "\n" + \
-                "┃〔 楓糖製作半垢 〕" + "\n" + \
+                "┃〔 楓糖製作 單體半垢 〕" + "\n" + \
                 "┃〔 Help Message 〕━━" + "\n" + \
                 "┃〔 Meun 〕━━━" + "\n" + \
 		        "┃" + key + "Help 幫助\n" +\
@@ -136,7 +136,7 @@ def menuHelp():
 		        "┃" + key + "Status 狀態" + "\n" + \
 		        "┃〔 Settings Command 〕━" + "\n" + \
                 "┃SetKey 「On/Off」 設置鍵" + "\n" + \
-                "┃" + key + "AutoAdd 「On/Off」 自動添加" + "\n" + \
+                "┃" + key + "AutoAdd 「On/Off」 自動添加好友" + "\n" + \
                 "┃" + key + "AutoJoin 「On/Off」自動入群" + "\n" + \
                 "┃" + key + "AutoJoinTicket 「On/Off」自動加入票卷" + "\n" + \
                 "┃" + key + "AutoRead 「On/Off」自動已讀" + "\n" + \
@@ -193,7 +193,7 @@ def menuHelp():
                 "┃" + key + "MimicList 模仿名單" + "\n" + \
                 "┃" + key + "MimicAdd @Mention 加入模仿" + "\n" + \
                 "┃" + key + "MimicDel @Mention 刪除模仿" + "\n" + \
-                "┃" + key + "Mention 標記" + "\n" + \
+                "┃" + key + "Mention 標記全部" + "\n" + \
                 "┃" + key + "Lurking 「On/Off」 已讀點設置" + "\n" + \
                 "┃" + key + "Lurking 查看已讀" + "\n" + \
 		        "┃〔 Media Command 〕━━" + "\n" + \
