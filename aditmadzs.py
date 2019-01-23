@@ -50,7 +50,7 @@ settings = json.load(settingsOpen)
 unsend = json.load(unsendOpen)
 
 def restartBot():
-	print ("[ INFO ] BOT RESETTED")
+	print ("[ 訊息 ] BOT 重啟")
 	python = sys.executable
 	os.execl(python, python, *sys.argv)
 
@@ -173,37 +173,33 @@ def menuHelp():
                 "┃" + key + "朋友資料 「Number」" + "\n" + \
                 "┃" + key + "封鎖名單" + "\n" + \
                 "┃" + key + "朋友廣播" + "\n" + \
-                "┃" + key + "ChangePictureProfile 更改圖片配置文件" + "\n" + \
+                "┃" + key + "更改頭貼" + "\n" + \
 		        "┃〔 Group Command 〕━━" + "\n" + \
-                "┃" + key + "ChangeGroupName: 「Text」 更改群組名" + "\n" + \
-                "┃" + key + "GroupCreator 群組創建者" + "\n" + \
-                "┃" + key + "GroupID 群組ID" + "\n" + \
-                "┃" + key + "GroupName 群組名稱" + "\n" + \
-                "┃" + key + "GroupPicture 群組圖片" + "\n" + \
-                "┃" + key + "OpenQR 開啟QR" + "\n" + \
-                "┃" + key + "CloseQR 關閉QR" + "\n" + \
-                "┃" + key + "GroupList 群組列表" + "\n" + \
-                "┃" + key + "MemberList 成員名單" + "\n" + \
-                "┃" + key + "PendingList 待定名單" + "\n" + \
-                "┃" + key + "GroupInfo 群組資訊" + "\n" + \
-                "┣" + key + "GroupBroadcast: 「Text」 群組廣播" + "\n" + \
-                "┃" + key + "ChangeGroupPicture 更改組圖片" + "\n" + \
+                "┃" + key + "更改群組名「Text」" + "\n" + \
+                "┃" + key + "群組創建者" + "\n" + \
+                "┃" + key + "群組ID" + "\n" + \
+                "┃" + key + "群組名稱" + "\n" + \
+                "┃" + key + "群組圖片" + "\n" + \
+                "┃" + key + "開啟網址" + "\n" + \
+                "┃" + key + "關閉網址" + "\n" + \
+                "┃" + key + "群組列表" + "\n" + \
+                "┃" + key + "成員名單" + "\n" + \
+                "┃" + key + "待定名單" + "\n" + \
+                "┃" + key + "群組資訊" + "\n" + \
+                "┣" + key + "群組廣播「Text」" + "\n" + \
+                "┃" + key + "更改群組圖片" + "\n" + \
 		        "┃〔 Special Command 〕━━" + "\n" + \
-                "┃" + key + "Mimic 「On/Off」 模仿" + "\n" + \
-                "┃" + key + "MimicList 模仿名單" + "\n" + \
-                "┃" + key + "MimicAdd @Mention 加入模仿" + "\n" + \
-                "┃" + key + "MimicDel @Mention 刪除模仿" + "\n" + \
-                "┃" + key + "Mention 標記全部" + "\n" + \
-                "┃" + key + "Lurking 「On/Off」 已讀點設置" + "\n" + \
-                "┃" + key + "Lurking 查看已讀" + "\n" + \
+                "┃" + key + "模仿 「開/關」" + "\n" + \
+                "┃" + key + "模仿名單" + "\n" + \
+                "┃" + key + "模仿添加 @Mention" + "\n" + \
+                "┃" + key + "模仿刪除 @Mention" + "\n" + \
+                "┃" + key + "標記全部" + "\n" + \
+                "┃" + key + "已讀點 「開/關」" + "\n" + \
+                "┃" + key + "查看已讀" + "\n" + \
 		        "┃〔 Media Command 〕━━" + "\n" + \
-                "┃" + key + "InstaInfo 「Username」" + "\n" + \
-                "┃" + key + "InstaStory 「Username」" + "\n" + \
-                "┃" + key + "Quotes" + "\n" + \
-                "┃" + key + "SearchImage 「Search」" + "\n" + \
-                "┃" + key + "SearchMusic 「Search」" + "\n" + \
-                "┃" + key + "SearchLyric 「Search」" + "\n" + \
-                "┃" + key + "SearchYoutube 「Search」" + "\n" + \
+                "┃" + key + "IG資訊 「Username」" + "\n" + \
+                "┃" + key + "搜尋音樂 「Search」" + "\n" + \
+                "┃" + key + "從YouTube搜尋 「Search」" + "\n" + \
 		        "╰━━━〔 製作者 : ©楓糖™  〕"
 	return menuHelp
 
