@@ -129,50 +129,50 @@ def menuHelp():
 		        "┃" + key + "Help 幫助\n" +\
 		        "┃〔 Status Command 〕━━" + "\n" + \
 		        "┃MyKey 我的鑰匙" + "\n" + \
-		        "┃" + key + "Logout 登出" + "\n" + \
-		        "┃" + key + "Restart 重啟" + "\n" + \
-		        "┃" + key + "Runtime 運行時間" + "\n" + \
-		        "┃" + key + "Speed 速度" + "\n" + \
-		        "┃" + key + "Status 狀態" + "\n" + \
+		        "┃" + key + "登出" + "\n" + \
+		        "┃" + key + "重啟" + "\n" + \
+		        "┃" + key + "運行時間" + "\n" + \
+		        "┃" + key + "速度" + "\n" + \
+		        "┃" + key + "狀態" + "\n" + \
 		        "┃〔 Settings Command 〕━" + "\n" + \
                 "┃SetKey 「On/Off」 設置鍵" + "\n" + \
-                "┃" + key + "AutoAdd 「On/Off」 自動添加好友" + "\n" + \
-                "┃" + key + "AutoJoin 「On/Off」自動入群" + "\n" + \
-                "┃" + key + "AutoJoinTicket 「On/Off」自動加入票卷" + "\n" + \
-                "┃" + key + "AutoRead 「On/Off」自動已讀" + "\n" + \
-                "┃" + key + "AutoRespon 「On/Off」 自動回复" + "\n" + \
-                "┃" + key + "CheckContact 「On/Off」查看友資" + "\n" + \
-                "┃" + key + "CheckPost 「On/Off」 查看貼文" + "\n" + \
-                "┃" + key + "CheckSticker 「On/Off」 查看貼圖" + "\n" + \
-                "┃" + key + "DetectUnsend 「On/Off」 檢查收回" + "\n" + \
-                "┃" + key + "SetKey: 「text」 設置鍵: 文字" + "\n" + \
-                "┃" + key + "SetAutoAddMessage: 「text」 設置自動添加消息" + "\n" + \
-                "┃" + key + "SetAutoResponMessage: 「text」 設置自動回复消息" + "\n" + \
-                "┃" + key + "SetAutoJoinMessage: 「Text」 設置自動加入消息" + "\n" + \
+                "┃" + key + "自動添加好友 「開/關」" + "\n" + \
+                "┃" + key + "自動入群 「開/關」" + "\n" + \
+                "┃" + key + "自動加入票卷 「開/關」" + "\n" + \
+                "┃" + key + "自動已讀 「開/關」" + "\n" + \
+                "┃" + key + "自動回覆 「開/關」" + "\n" + \
+                "┃" + key + "查看友資 「開/關」" + "\n" + \
+                "┃" + key + "查看貼文 「開/關」" + "\n" + \
+                "┃" + key + "查看貼圖 「開/關」" + "\n" + \
+                "┃" + key + "查看收回 「開/關」" + "\n" + \
+                "┃" + key + "SetKey: 「text」" + "\n" + \
+                "┃" + key + "自動添加消息 「開/關」" + "\n" + \
+                "┃" + key + "設置自動回覆消息 「開/關」" + "\n" + \
+                "┃" + key + "設置自動加入消息 「開/關」" + "\n" + \
 		        "┃〔 Self Command 〕━━" + "\n" + \
-                "┃" + key + "ChangeName: 「Text」 更改名稱" + "\n" + \
-                "┃" + key + "ChangeBio: 「Text」 更改個簽" + "\n" + \
-                "┃" + key + "Me 我" + "\n" + \
-                "┃" + key + "MyMid 我的mid" + "\n" + \
-                "┃" + key + "MyName 我的名稱" + "\n" + \
-                "┃" + key + "MyBio 我的個簽" + "\n" + \
-                "┃" + key + "MyPicture 我的頭貼" + "\n" + \
-                "┃" + key + "MyVideoProfile 我的視頻資料" + "\n" + \
-                "┃" + key + "MyCover 我的封面" + "\n" + \
-                "┃" + key + "MyProfile 我的個人資料" + "\n" + \
-                "┃" + key + "GetMid @Mention 獲得Mid" + "\n" + \
-                "┣" + key + "GetName @Mention 獲得名稱" + "\n" + \
-                "┃" + key + "GetBio @Mention 獲得個簽" + "\n" + \
-                "┃" + key + "GetPicture @Mention 獲得頭貼" + "\n" + \
-                "┃" + key + "GetVideoProfile @Mention 獲得視頻資料" + "\n" + \
-                "┃" + key + "GetCover @Mention 獲得封面" + "\n" + \
-                "┃" + key + "CloneProfile @Mention 克隆配置文件" + "\n" + \
-                "┃" + key + "RestoreProfile 恢復配置文件" + "\n" + \
-                "┃" + key + "BackupProfile 備份配置文件" + "\n" + \
-                "┃" + key + "FriendList 朋友列表" + "\n" + \
-                "┃" + key + "FriendInfo 「Number」 朋友信息" + "\n" + \
-                "┃" + key + "BlockList 黑名單" + "\n" + \
-                "┃" + key + "FriendBroadcast 朋友廣播" + "\n" + \
+                "┃" + key + "更改名稱: 「Text」" + "\n" + \
+                "┃" + key + "更改個簽: 「Text」" + "\n" + \
+                "┃" + key + "Me" + "\n" + \
+                "┃" + key + "我的mid" + "\n" + \
+                "┃" + key + "我的名稱" + "\n" + \
+                "┃" + key + "我的個簽" + "\n" + \
+                "┃" + key + "我的頭貼" + "\n" + \
+                "┃" + key + "我的影片" + "\n" + \
+                "┃" + key + "我的封面" + "\n" + \
+                "┃" + key + "我的個人資料" + "\n" + \
+                "┃" + key + "Mid @Mention" + "\n" + \
+                "┣" + key + "名稱 @Mention" + "\n" + \
+                "┃" + key + "個簽 @Mention" + "\n" + \
+                "┃" + key + "頭貼 @Mention" + "\n" + \
+                "┃" + key + "個人影片 @Mention 個人影片" + "\n" + \
+                "┃" + key + "封面 @Mention" + "\n" + \
+                "┃" + key + "複製個人資料 @Mention" + "\n" + \
+                "┃" + key + "恢復個人資料" + "\n" + \
+                "┃" + key + "備份個人資料" + "\n" + \
+                "┃" + key + "朋友列表" + "\n" + \
+                "┃" + key + "朋友資料 「Number」" + "\n" + \
+                "┃" + key + "封鎖名單" + "\n" + \
+                "┃" + key + "朋友廣播" + "\n" + \
                 "┃" + key + "ChangePictureProfile 更改圖片配置文件" + "\n" + \
 		        "┃〔 Group Command 〕━━" + "\n" + \
                 "┃" + key + "ChangeGroupName: 「Text」 更改群組名" + "\n" + \
@@ -394,13 +394,13 @@ def clientBot(op):
 
 		if op.type == 5:
 			print ("[ 5 ] NOTIFIED ADD CONTACT")
-			if settings["autoAdd"] == True:
+			if settings["自動添加"] == True:
 				client.findAndAddContactsByMid(op.param1)
 			client.sendMention(op.param1, settings["autoJoinMessage"], [op.param1])
 
 		if op.type == 13:
 			print ("[ 13 ] NOTIFIED INVITE INTO GROUP")
-			if settings["autoJoin"] and clientMid in op.param3:
+			if settings["自動入群"] and clientMid in op.param3:
 				client.acceptGroupInvitation(op.param1)
 				client.sendMention(op.param1, settings["autoJoinMessage"], [op.param2])
 
@@ -427,19 +427,19 @@ def clientBot(op):
 					elif msg.toType == 2:
 						to = receiver
 					if msg.contentType == 0:
-						if cmd == "logout":
+						if cmd == "登出":
 							client.sendMessage(to, "成功關閉BOT")
-							sys.exit("[ INFO ] BOT SHUTDOWN")
+							sys.exit("[　訊息　] 機器關閉")
 							return
-						elif cmd == "restart":
+						elif cmd == "重啟":
 							client.sendMessage(to, "成功重置機器人")
 							restartBot()
-						elif cmd == "speed":
+						elif cmd == "速度":
 							start = time.time()
 							client.sendMessage(to, "拼命測速中......")
 							elapsed_time = time.time() - start
 							client.sendMessage(to, "訊息反應速度 {} 秒".format(str(elapsed_time)))
-						elif cmd == "runtime":
+						elif cmd == "運行時間":
 							timeNow = time.time()
 							runtime = timeNow - clientStart
 							runtime = timeChange(runtime)
@@ -475,171 +475,171 @@ def clientBot(op):
 							client.sendFooter(to, helpTranslate, icon, name, link)
 
 
-						elif cmd == "status":
+						elif cmd == "狀態":
 							try:
 								ret_ = "╔══[ 目前狀態 ]"
-								if settings["autoAdd"] == True: ret_ += "\n╠ 自動添加 : ON"
-								else: ret_ += "\n╠ 自動添加 : OFF"
-								if settings["autoJoin"] == True: ret_ += "\n╠ 自動入群 : ON"
-								else: ret_ += "\n╠ 自動入群 : OFF"
-								if settings["autoJoin"] == True: ret_ += "\n╠ 自動加入 : ON"
-								else: ret_ += "\n╠ 自動加入 : OFF"
-								if settings["autoRead"] == True: ret_ += "\n╠ 自動已讀 : ON"
-								else: ret_ += "\n╠ 自動已讀 : OFF"
-								if settings["autoRespon"] == True: ret_ += "\n╠ 自動回覆 : ON"
-								else: ret_ += "\n╠ 自動回覆 : OFF"
-								if settings["checkContact"] == True: ret_ += "\n╠ 檢查友資 : ON"
-								else: ret_ += "\n╠ 檢查友資 : OFF"
-								if settings["checkPost"] == True: ret_ += "\n╠ 檢查貼文 : ON"
-								else: ret_ += "\n╠ 檢查貼文 : OFF"
-								if settings["checkSticker"] == True: ret_ += "\n╠ 檢查貼圖 : ON"
-								else: ret_ += "\n╠ 檢查貼圖 : OFF"
-								if settings["detectUnsend"] == True: ret_ += "\n╠ 檢查收回 : ON"
-								else: ret_ += "\n╠ 檢查收回 : OFF"
-								if settings["setKey"] == True: ret_ += "\n╠ Set Key : ON"
-								else: ret_ += "\n╠ Set Key : OFF"
-								ret_ +="\n╠ 自動添加消息 : {}".format(settings["autoAddMessage"])
-								ret_ +="\n╠ 自動加入消息 : {}".format(settings["autoJoinMessage"])
-								ret_ +="\n╠ 自動回复消息 : {}".format(settings["autoResponMessage"])
+								if settings["autoAdd"] == True: ret_ += "\n╠ 自動添加 : 開"
+								else: ret_ += "\n╠ 自動添加 : 關"
+								if settings["autoJoin"] == True: ret_ += "\n╠ 自動入群 : 開"
+								else: ret_ += "\n╠ 自動入群 : 關"
+								if settings["autoJoin"] == True: ret_ += "\n╠ 自動加入票卷 : 開"
+								else: ret_ += "\n╠ 自動加入票卷 : 關"
+								if settings["autoRead"] == True: ret_ += "\n╠ 自動已讀 : 開"
+								else: ret_ += "\n╠ 自動已讀 : 關"
+								if settings["autoRespon"] == True: ret_ += "\n╠ 自動回覆 : 開"
+								else: ret_ += "\n╠ 自動回覆 : 關"
+								if settings["checkContact"] == True: ret_ += "\n╠ 查看友資 : 開"
+								else: ret_ += "\n╠ 檢查友資 : 關"
+								if settings["checkPost"] == True: ret_ += "\n╠ 查看貼文 : 開"
+								else: ret_ += "\n╠ 查看貼文 : 關"
+								if settings["checkSticker"] == True: ret_ += "\n╠ 查看貼圖 : 開"
+								else: ret_ += "\n╠ 檢查貼圖 : 關"
+								if settings["detectUnsend"] == True: ret_ += "\n╠ 查看收回 : 開"
+								else: ret_ += "\n╠ 查看收回 : 關"
+								if settings["setKey"] == True: ret_ += "\n╠ Set Key : 開"
+								else: ret_ += "\n╠ Set Key : 關"
+								ret_ +="\n╠ 自動添加消息 : {}".format(settings["自動添加消息"])
+								ret_ +="\n╠ 自動加入消息 : {}".format(settings["自動加入消息"])
+								ret_ +="\n╠ 自動回覆消息 : {}".format(settings["自動回覆消息"])
 								ret_ += "\n╚══[ Status ]"
 								client.sendMessage(to, str(ret_))
 							except Exception as error:
 								logError(error)
-						elif cmd == "autoadd on":
+						elif cmd == "自動添加　開":
 							if settings["autoAdd"] == True:
 								client.sendMessage(to, "自動添加已開啟")
 							else:
 								settings["autoAdd"] = True
 								client.sendMessage(to, "成功開啟自動添加")
-						elif cmd == "autoadd off":
+						elif cmd == "自動添加　關":
 							if settings["autoAdd"] == False:
 								client.sendMessage(to, "自動添加已關閉")
 							else:
 								settings["autoAdd"] = False
 								client.sendMessage(to, "成功關閉自動添加")
-						elif cmd == "autojoin on":
+						elif cmd == "自動入群　開":
 							if settings["autoJoin"] == True:
 								client.sendMessage(to, "自動入群已開啟")
 							else:
 								settings["autoJoin"] = True
 								client.sendMessage(to, "成功開啟自動入群")
-						elif cmd == "autojoin off":
+						elif cmd == "自動入群　關":
 							if settings["autoJoin"] == False:
 								client.sendMessage(to, "自動入群已關閉")
 							else:
 								settings["autoJoin"] = False
 								client.sendMessage(to, "成功關閉自動入群")
-						elif cmd == "autojointicket on":
+						elif cmd == "自動加入票卷　開":
 							if settings["autoJoinTicket"] == True:
 								client.sendMessage(to, "自動加入票卷已開啟")
 							else:
 								settings["autoJoinTicket"] = True
 								client.sendMessage(to, "成功開啟自動加入票卷")
-						elif cmd == "autojointicket off":
+						elif cmd == "自動加入票卷　關":
 							if settings["autoJoinTicket"] == False:
 								client.sendMessage(to, "自動加入票卷已關閉")
 							else:
 								settings["autoJoinTicket"] = False
 								client.sendMessage(to, "成功關閉自動加入票卷")
-						elif cmd == "autoread on":
+						elif cmd == "自動已讀　開":
 							if settings["autoRead"] == True:
 								client.sendMessage(to, "自動已讀已開啟")
 							else:
 								settings["autoRead"] = True
 								client.sendMessage(to, "成功開啟自動已讀")
-						elif cmd == "autoread off":
+						elif cmd == "自動已讀　關":
 							if settings["autoRead"] == False:
 								client.sendMessage(to, "自動已讀已被關閉")
 							else:
 								settings["autoRead"] = False
 								client.sendMessage(to, "成功關閉自動已讀")
-						elif cmd == "autorespon on":
+						elif cmd == "自動回覆　開":
 							if settings["autoRespon"] == True:
 								client.sendMessage(to, "自動回覆已開啟")
 							else:
 								settings["autoRespon"] = True
 								client.sendMessage(to, "成功開啟自動回覆")
-						elif cmd == "autorespon off":
+						elif cmd == "自動回覆　關":
 							if settings["autoRespon"] == False:
 								client.sendMessage(to, "自動回覆已關閉")
 							else:
 								settings["autoRespon"] = False
 								client.sendMessage(to, "成功關閉自動回覆")
-						elif cmd == "checkcontact on":
+						elif cmd == "查看友資　開":
 							if settings["checkContact"] == True:
 								client.sendMessage(to, "查看友資已開啟")
 							else:
 								settings["checkContact"] = True
 								client.sendMessage(to, "成功開啟查看友資")
-						elif cmd == "checkcontact off":
+						elif cmd == "查看友資　關":
 							if settings["checkContact"] == False:
 								client.sendMessage(to, "查看友資已關閉")
 							else:
 								settings["checkContact"] = False
 								client.sendMessage(to, "成功關閉查看友資")
-						elif cmd == "checkpost on":
+						elif cmd == "查看貼文　開":
 							if settings["checkPost"] == True:
 								client.sendMessage(to, "查看貼文已開啟")
 							else:
 								settings["checkPost"] = True
 								client.sendMessage(to, "成功開啟查看貼文")
-						elif cmd == "checkpost off":
+						elif cmd == "查看貼文　關":
 							if settings["checkPost"] == False:
 								client.sendMessage(to, "查看貼文已關閉")
 							else:
 								settings["checkPost"] = False
 								client.sendMessage(to, "成功關閉查看貼文")
-						elif cmd == "checksticker on":
+						elif cmd == "查看貼圖　開":
 							if settings["checkSticker"] == True:
 								client.sendMessage(to, "查看貼圖已開啟")
 							else:
 								settings["checkSticker"] = True
 								client.sendMessage(to, "成功開啟查看貼圖")
-						elif cmd == "checksticker off":
+						elif cmd == "查看貼圖　關":
 							if settings["checkSticker"] == False:
 								client.sendMessage(to, "查看貼圖已關閉")
 							else:
 								settings["checkSticker"] = False
 								client.sendMessage(to, "成功關閉查看貼圖")
-						elif cmd == "detectunsend on":
+						elif cmd == "查看收回　開":
 							if settings["detectUnsend"] == True:
 								client.sendMessage(to, "查看收回已開啟")
 							else:
 								settings["detectUnsend"] = True
 								client.sendMessage(to, "成功開啟查看回收")
-						elif cmd == "detectunsend off":
+						elif cmd == "查看收回　關":
 							if settings["detectUnsend"] == False:
 								client.sendMessage(to, "查看收回已關閉")
 							else:
 								settings["detectUnsend"] = False
 								client.sendMessage(to, "成功關閉查看收回")
-						elif cmd.startswith("setautoaddmessage: "):
+						elif cmd.startswith("自動添加消息: "):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							try:
-								settings["autoAddMessage"] = txt
+								settings["自動添加消息"] = txt
 								client.sendMessage(to, "成功將自動添加消息更改為 : 「{}」".format(txt))
 							except:
 								client.sendMessage(to, "無法更改自動添加消息")
-						elif cmd.startswith("setautoresponmessage: "):
+						elif cmd.startswith("自動回覆消息: "):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							try:
-								settings["autoResponMessage"] = txt
+								settings["自動回覆消息"] = txt
 								client.sendMessage(to, "成功將自動回覆消息更改為 : 「{}」".format(txt))
 							except:
 								client.sendMessage(to, "無法更改自動回覆消息")
-						elif cmd.startswith("setautojoinmessage: "):
+						elif cmd.startswith("自動加入消息: "):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							try:
-								settings["autoJoinMessage"] = txt
+								settings["自動加入消息"] = txt
 								client.sendMessage(to, "成功將自動入群消息更改為 : 「{}」".format(txt))
 							except:
 								client.sendMessage(to, "無法更改自動入群消息")
 
 
-						elif cmd.startswith("changename: "):
+						elif cmd.startswith("更改名稱: "):
 							sep = text.split(" ")
 							name = text.replace(sep[0] + " ","")
 							if len(name) <= 20:
@@ -647,7 +647,7 @@ def clientBot(op):
 								profile.displayName = name
 								client.updateProfile(profile)
 								client.sendMessage(to, "成功將名稱更改為 : {}".format(name))
-						elif cmd.startswith("changebio: "):
+						elif cmd.startswith("更改個簽: "):
 							sep = text.split(" ")
 							bio = text.replace(sep[0] + " ","")
 							if len(bio) <= 500:
@@ -658,7 +658,7 @@ def clientBot(op):
 						elif cmd == "me":
 							client.sendMention(to, "@!", [sender])
 							client.sendContact(to, sender)
-						elif cmd == "myprofile":
+						elif cmd == "我的個人資料":
 							contact = client.getContact(sender)
 							cover = client.getProfileCoverURL(sender)
 							result = "╔══[ 資料詳情 ]"
@@ -670,27 +670,27 @@ def clientBot(op):
 							result += "\n╚══[ 結束 ]"
 							client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
 							client.sendMention(to, result, [sender])
-						elif cmd == "mymid":
+						elif cmd == "我的mid":
 							contact = client.getContact(sender)
 							client.sendMention(to, "@!: {}".format(contact.mid), [sender])
-						elif cmd == "myname":
+						elif cmd == "我的名稱":
 							contact = client.getContact(sender)
 							client.sendMention(to, "@!: {}".format(contact.displayName), [sender])
-						elif cmd == "mybio":
+						elif cmd == "我的個簽":
 							contact = client.getContact(sender)
 							client.sendMention(to, "@!: {}".format(contact.statusMessage), [sender])
-						elif cmd == "mypicture":
+						elif cmd == "我的頭貼":
 							contact = client.getContact(sender)
 							client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
-						elif cmd == "myvideoprofile":
+						elif cmd == "我的影片":
 							contact = client.getContact(sender)
 							if contact.videoProfile == None:
-								return client.sendMessage(to, "沒有個人資料視頻")
+								return client.sendMessage(to, "沒有個人影片")
 							client.sendVideoWithURL(to, "http://dl.profile.line-cdn.net/{}/vp".format(contact.pictureStatus))
-						elif cmd == "mycover":
+						elif cmd == "我的封面":
 							cover = client.getProfileCoverURL(sender)
 							client.sendImageWithURL(to, str(cover))
-						elif cmd.startswith("getmid "):
+						elif cmd.startswith("Mid "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
 								mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -701,7 +701,7 @@ def clientBot(op):
 										lists.append(mention["M"])
 								for ls in lists:
 									client.sendMention(to, "@!: {}".format(ls), [ls])
-						elif cmd.startswith("getname "):
+						elif cmd.startswith("名稱 "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
 								mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -713,7 +713,7 @@ def clientBot(op):
 								for ls in lists:
 									contact = client.getContact(ls)
 									client.sendMention(to, "@!: {}".format(contact.displayName), [ls])
-						elif cmd.startswith("getbio "):
+						elif cmd.startswith("個簽 "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
 								mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -725,7 +725,7 @@ def clientBot(op):
 								for ls in lists:
 									contact = client.getContact(ls)
 									client.sendMention(to, "@!: {}".format(contact.statusMessage), [ls])
-						elif cmd.startswith("getpicture "):
+						elif cmd.startswith("頭貼 "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
 								mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -737,7 +737,7 @@ def clientBot(op):
 								for ls in lists:
 									contact = client.getContact(ls)
 									client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
-						elif cmd.startswith("getvideoprofile "):
+						elif cmd.startswith("個人影片 "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
 								mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -749,9 +749,9 @@ def clientBot(op):
 								for ls in lists:
 									contact = client.getContact(ls)
 									if contact.videoProfile == None:
-										return client.sendMention(to, "@!沒有個人資料視頻", [ls])
+										return client.sendMention(to, "@!沒有個人影片", [ls])
 									client.sendVideoWithURL(to, "http://dl.profile.line-cdn.net/{}/vp".format(contact.pictureStatus))
-						elif cmd.startswith("getcover "):
+						elif cmd.startswith("封面 "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
 								mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -763,7 +763,7 @@ def clientBot(op):
 								for ls in lists:
 									cover = client.getProfileCoverURL(ls)
 									client.sendImageWithURL(to, str(cover))
-						elif cmd.startswith("cloneprofile "):
+						elif cmd.startswith("複製個人資料 "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
 								mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -776,7 +776,7 @@ def clientBot(op):
 									client.cloneContactProfile(ls)
 									client.sendContact(to, sender)
 									client.sendMessage(to, "複製個人資料已成功")
-						elif cmd == "restoreprofile":
+						elif cmd == "恢復個人資料":
 							try:
 								clientProfile = client.getProfile()
 								clientProfile.displayName = str(settings["myProfile"]["displayName"])
@@ -792,7 +792,7 @@ def clientBot(op):
 							except Exception as error:
 								logError(error)
 								client.sendMessage(to, "恢復配置文件失敗")
-						elif cmd == "backupprofile":
+						elif cmd == "備份個人資料":
 							try:
 								clientProfile = client.getProfile()
 								settings["myProfile"]["displayName"] = str(clientProfile.displayName)
@@ -804,7 +804,7 @@ def clientBot(op):
 							except Exception as error:
 								logError(error)
 								client.sendMessage(to, "配置文件備份失敗")
-						elif cmd == "friendlist":
+						elif cmd == "朋友列表":
 							contacts = client.getAllContactIds()
 							num = 0
 							result = "╔══[ 朋友列表 ]"
@@ -814,7 +814,7 @@ def clientBot(op):
 								result += "\n╠ {}. {}".format(num, contact.displayName)
 							result += "\n╚══[ 全部 {} 個好友 ]".format(len(contacts))
 							client.sendMessage(to, result)
-						elif cmd.startswith("friendinfo "):
+						elif cmd.startswith("朋友資料 "):
 							sep = text.split(" ")
 							query = text.replace(sep[0] + " ","")
 							contacts = client.getAllContactIds()
@@ -833,17 +833,17 @@ def clientBot(op):
 								client.sendMention(to, result, [contact.mid])
 							except Exception as error:
 								logError(error)
-						elif cmd == "blocklist":
+						elif cmd == "封鎖名單":
 							blockeds = client.getBlockedContactIds()
 							num = 0
-							result = "╔══[ 黑名單 ]"
+							result = "╔══[ 封鎖名單 ]"
 							for listBlocked in blockeds:
 								contact = client.getContact(listBlocked)
 								num += 1
 								result += "\n╠ {}. {}".format(num, contact.displayName)
 							result += "\n╚══[ 一共 {} 個人 ]".format(len(blockeds))
 							client.sendMessage(to, result)
-						elif cmd.startswith("friendbroadcast: "):
+						elif cmd.startswith("朋友廣播: "):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							contacts = client.getAllContactIds()
@@ -852,7 +852,7 @@ def clientBot(op):
 							client.sendMessage(to, "成功轉播到 {} 個朋友".format(str(len(contacts))))
 
 
-						elif cmd.startswith("changegroupname: "):
+						elif cmd.startswith("更改群組名: "):
 							if msg.toType == 2:
 								sep = text.split(" ")
 								groupname = text.replace(sep[0] + " ","")
@@ -861,33 +861,33 @@ def clientBot(op):
 									group.name = groupname
 									client.updateGroup(group)
 									client.sendMessage(to, "成功將組名更改為 : {}".format(groupname))
-						elif cmd == "openqr":
+						elif cmd == "開啟網址":
 							if msg.toType == 2:
 								group = client.getGroup(to)
 								group.preventedJoinByTicket = False
 								client.updateGroup(group)
 								groupUrl = client.reissueGroupTicket(to)
 								client.sendMessage(to, "成功開啟群組QR\n\nGroupURL : line://ti/g/{}".format(groupUrl))
-						elif cmd == "closeqr":
+						elif cmd == "關閉網址":
 							if msg.toType == 2:
 								group = client.getGroup(to)
 								group.preventedJoinByTicket = True
 								client.updateGroup(group)
 								client.sendMessage(to, "成功關閉群組QR")
-						elif cmd == "grouppicture":
+						elif cmd == "群組圖片":
 							if msg.toType == 2:
 								group = client.getGroup(to)
 								groupPicture = "http://dl.profile.line-cdn.net/{}".format(group.pictureStatus)
 								client.sendImageWithURL(to, groupPicture)
-						elif cmd == "groupname":
+						elif cmd == "群組名稱":
 							if msg.toType == 2:
 								group = client.getGroup(to)
 								client.sendMessage(to, "群組名稱 : {}".format(group.name))
-						elif cmd == "groupid":
+						elif cmd == "群組ID":
 							if msg.toType == 2:
 								group = client.getGroup(to)
 								client.sendMessage(to, "群組ID : {}".format(group.id))
-						elif cmd == "grouplist":
+						elif cmd == "群組列表":
 							groups = client.getGroupIdsJoined()
 							ret_ = "╔══[ 群組列表 ]"
 							no = 0
@@ -897,30 +897,30 @@ def clientBot(op):
 								ret_ += "\n╠ {}. {} | {}".format(str(no), str(group.name), str(len(group.members)))
 							ret_ += "\n╚══[ 一共 {} 個群組 ]".format(str(len(groups)))
 							client.sendMessage(to, str(ret_))
-						elif cmd == "memberlist":
+						elif cmd == "成員名單":
 							if msg.toType == 2:
 								group = client.getGroup(to)
 								num = 0
-								ret_ = "╔══[ 名單成員 ]"
+								ret_ = "╔══[ 成員名單 ]"
 								for contact in group.members:
 									num += 1
 									ret_ += "\n╠ {}. {}".format(num, contact.displayName)
 								ret_ += "\n╚══[ 一共 {} 個成員]".format(len(group.members))
 								client.sendMessage(to, ret_)
-						elif cmd == "pendinglist":
+						elif cmd == "待定名單":
 							if msg.toType == 2:
 								group = client.getGroup(to)
-								ret_ = "╔══[ 待定清單 ]"
+								ret_ = "╔══[ 待定名單 ]"
 								no = 0
 								if group.invitee is None or group.invitee == []:
-									return client.sendMessage(to, "Tidak ada pendingan")
+									return client.sendMessage(to, "沒有冷卻")
 								else:
 									for pending in group.invitee:
 										no += 1
 										ret_ += "\n╠ {}. {}".format(str(no), str(pending.displayName))
 									ret_ += "\n╚══[ 一共 {} 個人]".format(str(len(group.invitee)))
 									client.sendMessage(to, str(ret_))
-						elif cmd == "groupinfo":
+						elif cmd == "群組資訊":
 							group = client.getGroup(to)
 							try:
 								try:
@@ -960,7 +960,7 @@ def clientBot(op):
 								ret_ += "\n╚══[ 結束 ]"
 								client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(group.pictureStatus))
 								client.sendMessage(to, str(ret_))
-						elif cmd.startswith("groupbroadcast: "):
+						elif cmd.startswith("群組廣播: "):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							groups = client.getGroupIdsJoined()
@@ -969,7 +969,7 @@ def clientBot(op):
 							client.sendMessage(to, "成功轉播到 {} 個群組".format(str(len(groups))))
 
 
-						elif cmd == 'mentionall':
+						elif cmd == '標記成員':
 							group = client.getGroup(to)
 							midMembers = [contact.mid for contact in group.members]
 							midSelect = len(midMembers)//100
@@ -983,7 +983,7 @@ def clientBot(op):
 									ret_ += "\n╠ {}. @!".format(str(no))
 								ret_ += "\n╚══[ 一共 {} 個成員]".format(str(len(dataMid)))
 								client.sendMention(to, ret_, dataMid)
-						elif cmd == "lurking on":
+						elif cmd == "已讀點 開":
 							tz = pytz.timezone("Asia/Makassar")
 							timeNow = datetime.now(tz=tz)
 							day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
@@ -1014,7 +1014,7 @@ def clientBot(op):
 								read['readPoint'][to] = msg_id
 								read['readMember'][to] = []
 								client.sendMessage(to, "設置已讀點 : \n{}".format(readTime))
-						elif cmd == "lurking off":
+						elif cmd == "已讀點 關":
 							tz = pytz.timezone("Asia/Makassar")
 							timeNow = datetime.now(tz=tz)
 							day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
@@ -1036,7 +1036,7 @@ def clientBot(op):
 								except:
 									pass
 								client.sendMessage(to, "刪除已讀點 : \n{}".format(readTime))
-						elif cmd == "lurking":
+						elif cmd == "查看已讀":
 							if to in read['readPoint']:
 								if read["readMember"][to] == []:
 									return client.sendMessage(to, "沒有已讀者")
@@ -1049,27 +1049,27 @@ def clientBot(op):
 									result += "\n╚══[ 一共 {} 個已讀 ]".format(str(len(read["readMember"][to])))
 									client.sendMention(to, result, read["readMember"][to])
 									read['readMember'][to] = []
-						elif cmd == "changepictureprofile":
+						elif cmd == "更改頭貼":
 							settings["changePictureProfile"] = True
 							client.sendMessage(to, "請發送圖片")
-						elif cmd == "changegrouppicture":
+						elif cmd == "更改組圖片":
 							if msg.toType == 2:
 								if to not in settings["changeGroupPicture"]:
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "請發送圖片")
-						elif cmd == "mimic on":
+						elif cmd == "模仿 開":
 							if settings["mimic"]["status"] == True:
 								client.sendMessage(to, "模仿已開啟")
 							else:
 								settings["mimic"]["status"] = True
 								client.sendMessage(to, "成功開啟模仿")
-						elif cmd == "mimic off":
+						elif cmd == "模仿 關":
 							if settings["mimic"]["status"] == False:
 								client.sendMessage(to, "模仿已被禁用")
 							else:
 								settings["mimic"]["status"] = False
 								client.sendMessage(to, "成功關閉模仿")
-						elif cmd == "mimiclist":
+						elif cmd == "模仿列表":
 							if settings["mimic"]["target"] == {}:
 								client.sendMessage(to, "沒有目標")
 							else:
@@ -1082,7 +1082,7 @@ def clientBot(op):
 									result += "\n╠ {}. @!".format(no)
 								result += "\n╚══[ 一共 {} 個人 ]".format(str(len(target)))
 								client.sendMention(to, result, target)
-						elif cmd.startswith("mimicadd "):
+						elif cmd.startswith("模仿添加 "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
 								mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -1100,7 +1100,7 @@ def clientBot(op):
 											client.sendMessage(to, "成功添加目標")
 									except:
 										client.sendMessage(to, "無法添加目標")
-						elif cmd.startswith("mimicdel "):
+						elif cmd.startswith("模仿刪除 "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
 								mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -1120,7 +1120,7 @@ def clientBot(op):
 										client.sendMessage(to, "無法刪除目標")
 
 
-						elif cmd.startswith("instainfo"):
+						elif cmd.startswith("IG資訊"):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							url = requests.get("http://corrykalam.pw/api/instagram.php?username={}".format(search))
@@ -1177,7 +1177,7 @@ def clientBot(op):
 							tts.save("line/tmp/tts-{}.mp3".format(lang))
 							client.sendAudio(to, "line/tmp/tts-{}.mp3".format(lang))
 							client.deleteFile("line/tmp/tts-{}.mp3".format(lang))
-						elif cmd.startswith("searchyoutube "):
+						elif cmd.startswith("從YouTube搜尋 "):
 							sep = text.split(" ")
 							txt = msg.text.replace(sep[0] + " ","")
 							cond = txt.split("|")
@@ -1214,7 +1214,7 @@ def clientBot(op):
 							url = requests.get("http://rahandiapi.herokuapp.com/imageapi?key=betakey&q={}".format(txt))
 							data = url.json()
 							client.sendImageWithURL(to, random.choice(data["result"]))
-						elif cmd.startswith("searchmusic "):
+						elif cmd.startswith("搜尋音樂 "):
 							sep = text.split(" ")
 							query = text.replace(sep[0] + " ","")
 							cond = query.split("|")
