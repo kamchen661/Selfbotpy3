@@ -494,9 +494,9 @@ def clientBot(op):
 								else: ret_ += "\n╠ 查看收回 : 關"
 								if settings["setKey"] == True: ret_ += "\n╠ Set Key : 開"
 								else: ret_ += "\n╠ Set Key : 關"
-								ret_ +="\n╠ 自動添加消息 : {}".format(settings["自動添加消息"])
-								ret_ +="\n╠ 自動加入消息 : {}".format(settings["自動加入消息"])
-								ret_ +="\n╠ 自動回覆消息 : {}".format(settings["自動回覆消息"])
+								ret_ +="\n╠ 自動添加消息 : {}".format(settings["SetAutoAddMessage"])
+								ret_ +="\n╠ 自動加入消息 : {}".format(settings["SetAutoJoinMessage"])
+								ret_ +="\n╠ 自動回覆消息 : {}".format(settings["SetAutoResponMessage"])
 								ret_ += "\n╚══[ Status ]"
 								client.sendMessage(to, str(ret_))
 							except Exception as error:
@@ -613,7 +613,7 @@ def clientBot(op):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							try:
-								settings["自動添加消息"] = txt
+								settings["SetAutoAddMessage"] = txt
 								client.sendMessage(to, "成功將自動添加消息更改為 : 「{}」".format(txt))
 							except:
 								client.sendMessage(to, "無法更改自動添加消息")
@@ -621,7 +621,7 @@ def clientBot(op):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							try:
-								settings["自動回覆消息"] = txt
+								settings["SetAutoResponMessage"] = txt
 								client.sendMessage(to, "成功將自動回覆消息更改為 : 「{}」".format(txt))
 							except:
 								client.sendMessage(to, "無法更改自動回覆消息")
@@ -629,7 +629,7 @@ def clientBot(op):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							try:
-								settings["自動加入消息"] = txt
+								settings["SetAutoJoinMessage"] = txt
 								client.sendMessage(to, "成功將自動入群消息更改為 : 「{}」".format(txt))
 							except:
 								client.sendMessage(to, "無法更改自動入群消息")
