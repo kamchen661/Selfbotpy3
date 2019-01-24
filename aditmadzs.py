@@ -55,7 +55,7 @@ def restartBot():
 	os.execl(python, python, *sys.argv)
 
 def logError(text):
-    client.log("[ ERROR ] {}".format(str(text)))
+    client.log("[ 錯誤 ] {}".format(str(text)))
     tz = pytz.timezone("Asia/Makassar")
     timeNow = datetime.now(tz=tz)
     timeHours = datetime.strftime(timeNow,"(%H:%M)")
@@ -123,9 +123,9 @@ def menuHelp():
 	else:
 		key = ''
 	menuHelp =   "╭━━━━━━━━━━━━━━━━━━━━━" + "\n" + \
-                "┃〔 楓糖製作 單體半垢 〕" + "\n" + \
+                "┃〔 單體半垢 〕" + "\n" + \
                 "┃〔 Help Message 〕━━" + "\n" + \
-                "┃〔 Meun 〕━━━" + "\n" + \
+                "┃〔 Meun  〕━━━" + "\n" + \
 		        "┃" + key + "Help 幫助\n" +\
 		        "┃〔 Status Command 〕━━" + "\n" + \
 		        "┃MyKey 我的鑰匙" + "\n" + \
@@ -135,8 +135,8 @@ def menuHelp():
 		        "┃" + key + "速度" + "\n" + \
 		        "┃" + key + "狀態" + "\n" + \
 		        "┃〔 Settings Command 〕━" + "\n" + \
-                "┃SetKey 「On/Off」 設置鍵" + "\n" + \
-                "┃" + key + "自動添加好友 「開/關」" + "\n" + \
+                "┃SetKey 「On/Off」 " + "\n" + \
+                "┃" + key + "自動添加 「開/關」" + "\n" + \
                 "┃" + key + "自動入群 「開/關」" + "\n" + \
                 "┃" + key + "自動加入票卷 「開/關」" + "\n" + \
                 "┃" + key + "自動已讀 「開/關」" + "\n" + \
@@ -385,24 +385,24 @@ def menuTranslate():
 def clientBot(op):
 	try:
 		if op.type == 0:
-			print ("[ 0 ] END OF OPERATION")
+			print ("[ 0 ] 運行結束")
 			return
 
 		if op.type == 5:
-			print ("[ 5 ] NOTIFIED ADD CONTACT")
-			if settings["自動添加"] == True:
+			print ("[ 5 ] 通知添加聯繫人")
+			if settings["autoAdd"] == True:
 				client.findAndAddContactsByMid(op.param1)
 			client.sendMention(op.param1, settings["autoJoinMessage"], [op.param1])
 
 		if op.type == 13:
-			print ("[ 13 ] NOTIFIED INVITE INTO GROUP")
-			if settings["自動入群"] and clientMid in op.param3:
+			print ("[ 13 ] 通知邀請進入群組")
+			if settings["autoJoin"] and clientMid in op.param3:
 				client.acceptGroupInvitation(op.param1)
 				client.sendMention(op.param1, settings["autoJoinMessage"], [op.param2])
 
 		if op.type == 25:
 			try:
-				print("[ 25 ] SEND MESSAGE")
+				print("[ 25 ] 傳送訊息")
 				msg = op.message
 				text = str(msg.text)
 				msg_id = msg.id
@@ -439,7 +439,7 @@ def clientBot(op):
 							timeNow = time.time()
 							runtime = timeNow - clientStart
 							runtime = timeChange(runtime)
-							client.sendMessage(to, "BOT以運行 {}".format(str(runtime)))
+							client.sendMessage(to, "BOT已運行 {}".format(str(runtime)))
 						elif cmd.startswith("setkey: "):
 							sep = text.split(" ")
 							key = text.replace(sep[0] + " ","")
@@ -1402,7 +1402,7 @@ def clientBot(op):
 
 		if op.type == 26:
 			try:
-				print("[ 26 ] RECEIVE MESSAGE")
+				print("[ 26 ] 收到消息")
 				msg = op.message
 				text = str(msg.text)
 				msg_id = msg.id
@@ -1471,7 +1471,7 @@ def clientBot(op):
 
 
 		if op.type == 55:
-			print ("[ 55 ] NOTIFIED READ MESSAGE")
+			print ("[ 55 ] 通知已讀消息")
 			if op.param1 in read["readPoint"]:
 				if op.param2 not in read["readMember"][op.param1]:
 					read["readMember"][op.param1].append(op.param2)
