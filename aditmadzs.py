@@ -392,7 +392,7 @@ def clientBot(op):
 			print ("[ 5 ] 通知添加聯繫人")
 			if settings["autoAdd"] == True:
 				client.findAndAddContactsByMid(op.param1)
-			client.sendMention(op.param1, settings["autoJoinMessage"], [op.param1])
+			client.sendMention(op.param1, settings["autoAddMessage"], [op.param1])
 
 		if op.type == 13:
 			print ("[ 13 ] 通知邀請進入群組")
@@ -455,6 +455,7 @@ def clientBot(op):
 							name = contact.displayName
 							link = "https://pa1.narvii.com/6547/d29a5e4bb3405d83fc15cf50ec057f41640618a8_hq.gif"
 							client.sendFooter(to, helpMessage, icon, name, link)
+							client.sendContact(to, "uec6d62c3e4a61f033332bc1d86133e49")
 						elif cmd == "texttospeech":
 							helpTextToSpeech = menuTextToSpeech()
 							contact = client.getContact(sender)
@@ -471,7 +472,7 @@ def clientBot(op):
 							client.sendFooter(to, helpTranslate, icon, name, link)
 
 
-						elif cmd == "status":
+						elif cmd == "狀態":
 							try:
 								ret_ = "╔══[ 目前狀態 ]"
 								if settings["autoAdd"] == True: ret_ += "\n╠ 自動添加 : 開"
@@ -513,7 +514,7 @@ def clientBot(op):
 							else:
 								settings["autoAdd"] = False
 								client.sendMessage(to, "成功關閉自動添加")
-						elif cmd == "自動入群　開":
+						elif cmd == "自動入群 開":
 							if settings["autoJoin"] == True:
 								client.sendMessage(to, "自動入群已開啟")
 							else:
