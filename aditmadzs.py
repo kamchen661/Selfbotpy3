@@ -471,7 +471,7 @@ def clientBot(op):
 							client.sendFooter(to, helpTranslate, icon, name, link)
 
 
-						elif cmd == "狀態":
+						elif cmd == "status":
 							try:
 								ret_ = "╔══[ 目前狀態 ]"
 								if settings["autoAdd"] == True: ret_ += "\n╠ 自動添加 : 開"
@@ -501,7 +501,7 @@ def clientBot(op):
 								client.sendMessage(to, str(ret_))
 							except Exception as error:
 								logError(error)
-						elif cmd == "自動添加　開":
+						elif cmd == "自動添加 開":
 							if settings["autoAdd"] == True:
 								client.sendMessage(to, "自動添加已開啟")
 							else:
