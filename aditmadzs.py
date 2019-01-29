@@ -494,9 +494,9 @@ def clientBot(op):
 								else: ret_ += "\n╠ 查看收回 : 關"
 								if settings["setKey"] == True: ret_ += "\n╠ Set Key : 開"
 								else: ret_ += "\n╠ Set Key : 關"
-								ret_ +="\n╠ 自動添加消息 : {}".format(settings["SetAutoAddMessage"])
-								ret_ +="\n╠ 自動加入消息 : {}".format(settings["SetAutoJoinMessage"])
-								ret_ +="\n╠ 自動回覆消息 : {}".format(settings["SetAutoResponMessage"])
+								ret_ +="\n╠ 自動添加消息 : {}".format(settings["AutoAddMessage"])
+								ret_ +="\n╠ 自動加入消息 : {}".format(settings["AutoJoinMessage"])
+								ret_ +="\n╠ 自動回覆消息 : {}".format(settings["AutoResponMessage"])
 								ret_ += "\n╚══[ Status ]"
 								client.sendMessage(to, str(ret_))
 							except Exception as error:
@@ -507,7 +507,7 @@ def clientBot(op):
 							else:
 								settings["autoAdd"] = True
 								client.sendMessage(to, "成功開啟自動添加")
-						elif cmd == "自動添加　關":
+						elif cmd == "自動添加 關":
 							if settings["autoAdd"] == False:
 								client.sendMessage(to, "自動添加已關閉")
 							else:
@@ -519,91 +519,91 @@ def clientBot(op):
 							else:
 								settings["autoJoin"] = True
 								client.sendMessage(to, "成功開啟自動入群")
-						elif cmd == "自動入群　關":
+						elif cmd == "自動入群 關":
 							if settings["autoJoin"] == False:
 								client.sendMessage(to, "自動入群已關閉")
 							else:
 								settings["autoJoin"] = False
 								client.sendMessage(to, "成功關閉自動入群")
-						elif cmd == "自動加入票卷　開":
+						elif cmd == "自動加入票卷　關":
 							if settings["autoJoinTicket"] == True:
 								client.sendMessage(to, "自動加入票卷已開啟")
 							else:
 								settings["autoJoinTicket"] = True
 								client.sendMessage(to, "成功開啟自動加入票卷")
-						elif cmd == "自動加入票卷　關":
+						elif cmd == "自動加入票卷 關":
 							if settings["autoJoinTicket"] == False:
 								client.sendMessage(to, "自動加入票卷已關閉")
 							else:
 								settings["autoJoinTicket"] = False
 								client.sendMessage(to, "成功關閉自動加入票卷")
-						elif cmd == "自動已讀　開":
+						elif cmd == "自動已讀 開":
 							if settings["autoRead"] == True:
 								client.sendMessage(to, "自動已讀已開啟")
 							else:
 								settings["autoRead"] = True
 								client.sendMessage(to, "成功開啟自動已讀")
-						elif cmd == "自動已讀　關":
+						elif cmd == "自動已讀 關":
 							if settings["autoRead"] == False:
 								client.sendMessage(to, "自動已讀已被關閉")
 							else:
 								settings["autoRead"] = False
 								client.sendMessage(to, "成功關閉自動已讀")
-						elif cmd == "自動回覆　開":
+						elif cmd == "自動回覆 開":
 							if settings["autoRespon"] == True:
 								client.sendMessage(to, "自動回覆已開啟")
 							else:
 								settings["autoRespon"] = True
 								client.sendMessage(to, "成功開啟自動回覆")
-						elif cmd == "自動回覆　關":
+						elif cmd == "自動回覆 關":
 							if settings["autoRespon"] == False:
 								client.sendMessage(to, "自動回覆已關閉")
 							else:
 								settings["autoRespon"] = False
 								client.sendMessage(to, "成功關閉自動回覆")
-						elif cmd == "查看友資　開":
+						elif cmd == "查看友資 開":
 							if settings["checkContact"] == True:
 								client.sendMessage(to, "查看友資已開啟")
 							else:
 								settings["checkContact"] = True
 								client.sendMessage(to, "成功開啟查看友資")
-						elif cmd == "查看友資　關":
+						elif cmd == "查看友資 關":
 							if settings["checkContact"] == False:
 								client.sendMessage(to, "查看友資已關閉")
 							else:
 								settings["checkContact"] = False
 								client.sendMessage(to, "成功關閉查看友資")
-						elif cmd == "查看貼文　開":
+						elif cmd == "查看貼文 開":
 							if settings["checkPost"] == True:
 								client.sendMessage(to, "查看貼文已開啟")
 							else:
 								settings["checkPost"] = True
 								client.sendMessage(to, "成功開啟查看貼文")
-						elif cmd == "查看貼文　關":
+						elif cmd == "查看貼文 關":
 							if settings["checkPost"] == False:
 								client.sendMessage(to, "查看貼文已關閉")
 							else:
 								settings["checkPost"] = False
 								client.sendMessage(to, "成功關閉查看貼文")
-						elif cmd == "查看貼圖　開":
+						elif cmd == "查看貼圖 開":
 							if settings["checkSticker"] == True:
 								client.sendMessage(to, "查看貼圖已開啟")
 							else:
 								settings["checkSticker"] = True
 								client.sendMessage(to, "成功開啟查看貼圖")
-						elif cmd == "查看貼圖　關":
+						elif cmd == "查看貼圖 關":
 							if settings["checkSticker"] == False:
 								client.sendMessage(to, "查看貼圖已關閉")
 							else:
 								settings["checkSticker"] = False
 								client.sendMessage(to, "成功關閉查看貼圖")
-						elif cmd == "查看收回　開":
+						elif cmd == "查看收回 開":
 							if settings["detectUnsend"] == True:
 								client.sendMessage(to, "查看收回已開啟")
 							else:
 								settings["detectUnsend"] = True
 								client.sendMessage(to, "成功開啟查看回收")
-						elif cmd == "查看收回　關":
+						elif cmd == "查看收回 關":
 							if settings["detectUnsend"] == False:
 								client.sendMessage(to, "查看收回已關閉")
 							else:
@@ -613,7 +613,7 @@ def clientBot(op):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							try:
-								settings["SetAutoAddMessage"] = txt
+								settings["AutoAddMessage"] = txt
 								client.sendMessage(to, "成功將自動添加消息更改為 : 「{}」".format(txt))
 							except:
 								client.sendMessage(to, "無法更改自動添加消息")
@@ -621,7 +621,7 @@ def clientBot(op):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							try:
-								settings["SetAutoResponMessage"] = txt
+								settings["AutoResponMessage"] = txt
 								client.sendMessage(to, "成功將自動回覆消息更改為 : 「{}」".format(txt))
 							except:
 								client.sendMessage(to, "無法更改自動回覆消息")
@@ -629,7 +629,7 @@ def clientBot(op):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							try:
-								settings["SetAutoJoinMessage"] = txt
+								settings["AutoJoinMessage"] = txt
 								client.sendMessage(to, "成功將自動入群消息更改為 : 「{}」".format(txt))
 							except:
 								client.sendMessage(to, "無法更改自動入群消息")
