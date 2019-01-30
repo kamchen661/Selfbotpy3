@@ -470,6 +470,11 @@ def clientBot(op):
 							name = contact.displayName
 							link = "https://pa1.narvii.com/6547/d29a5e4bb3405d83fc15cf50ec057f41640618a8_hq.gif"
 							client.sendFooter(to, helpTranslate, icon, name, link)
+						elif cmd == "誰最可愛"
+					                client.sendContact(to, "uec6d62c3e4a61f033332bc1d86133e49")
+							client.sendMessage(to, "他最可愛:3")
+						
+							
 
 
 						elif cmd == "狀態":
