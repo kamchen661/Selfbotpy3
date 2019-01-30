@@ -472,7 +472,7 @@ def clientBot(op):
 							client.sendFooter(to, helpTranslate, icon, name, link)
 						elif cmd == "誰最可愛":
 					                client.sendContact(to, "uec6d62c3e4a61f033332bc1d86133e49")
-							client.sendMessage(to, "他最可愛:3")
+							client.sendMessage(to, "他最可愛")
 						
 							
 
